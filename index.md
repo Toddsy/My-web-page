@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/Toddsy/My-web-page/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Toddsy/My-web-page/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre id="aa"></pre>
+<div style="display:none" id="w">
+    谈及航母的改建工程，当时为了解决现场建设困难，他们做了大量的工作：一是统筹好所有的工作项目，精确安排每人每天的任务，最忙的时候精确到每个小时的具体任务；二是提高所有的施工质量，通过保证质量，在更大程度上节约时间；三是加班加点。
+    “通过这三个方面的手段，才把时间给抢回来。”王治国回忆，“因为我们在北方，那一年遇上了五十年不遇的严寒。前面的很多土建工作，受温度影响很大，耽误了时间。为了抢进度，最后我们把时间抢回来了。”
+</div>
+<script language="javascript">
+    var index=0;
+    var word=document.getElementById("w").innerHTML;
+    function type(){
+        document.getElementById("aa").innerText = word.substring(0,index++);
+    }
+    setInterval(type, 200);
+</script>
+</body>
+</html>
